@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/zanetajanowska/cybermask/app/SwRegister.tsx"],"sourcesContent":["\"use client\";\n\nimport { useEffect } from \"react\";\n\nexport function SwRegister() {\n  useEffect(() => {\n    if (\n      typeof window === \"undefined\" ||\n      !(\"serviceWorker\" in navigator) ||\n      process.env.NODE_ENV !== \"production\"\n    ) {\n      return;\n    }\n\n    const register = async () => {\n      try {\n        await navigator.serviceWorker.register(\"/service-worker.js\", {\n          scope: \"/\",\n        });\n      } catch (error) {\n        console.error(\"Service worker registration failed\", error);\n      }\n    };\n\n    register();\n  }, []);\n\n  return null;\n}\n\n\n"],"names":[],"mappings":";;;;AASM;AAPN;;AAFA;;AAIO,SAAS;;IACd,IAAA,0KAAS;gCAAC;YACR,IACE,+CAAkB,eAClB,CAAC,CAAC,mBAAmB,SAAS,KAC9B,oDAAyB,cACzB;gBACA;YACF;;;YAEA,MAAM;QAWR;+BAAG,EAAE;IAEL,OAAO;AACT;GAxBgB;KAAA","debugId":null}}]
+}

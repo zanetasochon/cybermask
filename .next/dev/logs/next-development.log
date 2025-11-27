@@ -1,0 +1,3 @@
+[00:00:01.183] Server  LOG      ✓ Ready in 478ms
+[00:00:01.951] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:02.383] Server  ERROR    ⨯ A conflicting public file and page file was found for path /manifest.webmanifest https://nextjs.org/docs/messages/conflicting-public-file-page
